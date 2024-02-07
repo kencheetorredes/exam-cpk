@@ -1,0 +1,18 @@
+<table class="table">
+            <tr>
+                <td>Customer ID</td>
+                <td>Number of calls within same continent</td>
+                <td>Total Duration of calls within same continent</td>
+                <td>Total number of all calls</td>
+                <td>Total duration of all calls</td>
+            </tr>
+            {%for statistic in statistics %}
+             <tr>
+                <td class="text-center">{{statistic.client_id}}</td>
+                <td class="text-center">{{statistic.same_continent}}</td>
+                <td class="text-center">{{statistic.same_continent_duration}}</td>
+                <td class="text-center">{{statistic.total_client}}</td>
+                <td class="text-center">{{statistic.total_duration}}</td>
+            </tr>
+            {% endfor %}
+</table>

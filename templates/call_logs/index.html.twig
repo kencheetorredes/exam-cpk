@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CallLogsController!{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row mt-5">
+            {{ include('call_logs/form.html.twig') }}
+            <div class="card mt-2">
+                <div class="card-body onloadpage" data-url="/result">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
